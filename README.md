@@ -1,5 +1,5 @@
 
-### 1. Virtual env
+### 1. Virtual venv
 ```
 python3.10 -m venv venv
 source venv/bin/activate
