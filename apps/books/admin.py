@@ -11,5 +11,7 @@ class BookAdmin(TranslationAdmin):
     group_fieldsets = True
 
 
-admin.site.register(Book, BookAdmin)
-admin.site.register(Author)
+# admin.site.register(Book, BookAdmin)
+# admin.site.register(Author) 
+
+

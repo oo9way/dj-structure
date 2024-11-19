@@ -1,0 +1,18 @@
+- Books
+    - list (user, admin)
+    - retrieve (user, admin)
+    - update, delete, create (admin)
+
+- Sales
+    - cart list (user)
+    - add book to cart (user)
+    - delete book from cart (user)
+    - make order
+
+- User
+    - login
+    - refresh token
+    - register (OTP)
+        email ---> OTP code
+        request --> email
+        confirm --> code

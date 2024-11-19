@@ -1,11 +1,11 @@
 from rest_framework.generics import GenericAPIView
-from .serializers import LoginUserSerializer
+from .serializers import NewLoginConfirmSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from apps.books.models import Book
 
-class UserLoginAPIView(GenericAPIView):
-    serializer_class = LoginUserSerializer
+class NewLoginConfirmAPIView(GenericAPIView):
+    serializer_class = NewLoginConfirmSerializer
 
     def post(self, request, *args, **kwargs):
         data = self.serializer_class(data=request.data, context={"request": request})
@@ -16,4 +16,4 @@ class UserLoginAPIView(GenericAPIView):
 
 
 
-__all__ = ['UserLoginAPIView']
+__all__ = ['NewLoginConfirmAPIView']

@@ -5,4 +5,4 @@ from .models import Book
 class BookTranslationOptions(TranslationOptions):
     fields = ("title", "description",)
 
-translator.register(Book, BookTranslationOptions)
+# translator.register(Book, BookTranslationOptions)
