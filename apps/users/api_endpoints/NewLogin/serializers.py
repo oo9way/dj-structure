@@ -18,8 +18,6 @@ class NewLoginSerializer(serializers.Serializer):
     def create(self, validated_data):
         phone_number = validated_data["phone_number"]
         one_time_code = random.randint(100000, 999999)
-        print("OTP", one_time_code)
-
         expire_time = datetime.now() - timedelta(seconds=60)
         User.objects.get_or_create(phone_number=phone_number, username=phone_number)
         
